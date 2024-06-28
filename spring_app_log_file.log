@@ -1,0 +1,41 @@
+2024-03-14T14:09:50.670+05:30  INFO 8696 --- [main] c.b.b.BankapplicationApiApplication      : Starting BankapplicationApiApplication using Java 20 with PID 8696 (F:\bankapplication-api\bankapplication-api\build\classes\java\main started by HP in F:\bankapplication-api\bankapplication-api)
+2024-03-14T14:09:50.800+05:30  INFO 8696 --- [main] c.b.b.BankapplicationApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-03-14T14:10:21.138+05:30  INFO 8696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-14T14:10:24.525+05:30  INFO 8696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2408 ms. Found 5 JPA repository interfaces.
+2024-03-14T14:10:28.503+05:30  INFO 8696 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2024-03-14T14:10:28.740+05:30  INFO 8696 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2024-03-14T14:11:01.276+05:30  INFO 8696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2024-03-14T14:11:02.123+05:30  INFO 8696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-14T14:11:02.125+05:30  INFO 8696 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-03-14T14:11:11.000+05:30  INFO 8696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-14T14:11:11.003+05:30  INFO 8696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 79252 ms
+2024-03-14T14:11:24.951+05:30  INFO 8696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-14T14:11:37.970+05:30  INFO 8696 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@359e27d2
+2024-03-14T14:11:38.008+05:30  INFO 8696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-14T14:11:40.777+05:30  INFO 8696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-14T14:11:42.596+05:30  INFO 8696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-03-14T14:11:42.725+05:30  INFO 8696 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-14T14:11:46.656+05:30  INFO 8696 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-03-14T14:11:50.986+05:30  INFO 8696 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-14T14:11:56.936+05:30  INFO 8696 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-03-14T14:12:12.322+05:30  INFO 8696 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-14T14:12:12.345+05:30  INFO 8696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-14T14:12:32.656+05:30  WARN 8696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-14T14:12:46.666+05:30  INFO 8696 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 9 endpoint(s) beneath base path '/actuator'
+2024-03-14T14:12:47.942+05:30  INFO 8696 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Or [Mvc [pattern='/api/v1/banks/{code}']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@27ca8a5a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62604ed4, org.springframework.security.web.context.SecurityContextHolderFilter@3c55e9d4, org.springframework.security.web.header.HeaderWriterFilter@6c4f48e2, org.springframework.security.web.csrf.CsrfFilter@70c68e4e, org.springframework.security.web.authentication.logout.LogoutFilter@1f5aac08, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6e157f48, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3446ab40, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@500d4de8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bfc6e50, org.springframework.security.web.access.ExceptionTranslationFilter@609f136b, org.springframework.security.web.access.intercept.AuthorizationFilter@76ac3ad0]
+2024-03-14T14:13:05.844+05:30  INFO 8696 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-03-14T14:13:05.848+05:30  INFO 8696 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2024-03-14T14:13:05.852+05:30  INFO 8696 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2024-03-14T14:13:06.518+05:30  INFO 8696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2024-03-14T14:13:06.970+05:30  INFO 8696 --- [main] c.b.b.BankapplicationApiApplication      : Started BankapplicationApiApplication in 202.07 seconds (process running for 215.383)
+2024-03-14T14:13:08.657+05:30  INFO 8696 --- [main] c.b.b.BankapplicationApiApplication      : The project is started Successfully
+2024-03-14T14:14:25.146+05:30  INFO 8696 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-14T14:14:25.209+05:30  INFO 8696 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-14T14:14:25.223+05:30  INFO 8696 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2024-03-14T14:15:17.340+05:30  INFO 8696 --- [http-nio-9000-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 6897 ms
+2024-03-14T14:32:42.108+05:30  INFO 8696 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-03-14T14:32:42.116+05:30  INFO 8696 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 0 subscriber(s).
+2024-03-14T14:32:42.121+05:30  INFO 8696 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2024-03-14T14:32:42.366+05:30  INFO 8696 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-14T14:32:42.373+05:30  INFO 8696 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-14T14:32:43.073+05:30  INFO 8696 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

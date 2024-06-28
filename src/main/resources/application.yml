@@ -1,0 +1,36 @@
+server:
+  port: 9000
+
+logging:
+  level:
+    org:
+      springframework: info
+    com:
+      bankingManagement: debug
+  file:
+    name: spring_app_log_file.log
+  pattern:
+    name: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+spring:
+  datasource:
+     url: jdbc:mysql://localhost:3306/bankapplication2
+     driver-class-name: com.mysql.cj.jdbc.Driver
+     username: root
+     password: root
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,metrics,loggers,beans,mappings,threaddump,env,caches
+  endpoint:
+    health:
+      show-details: always
+
+eureka:
+  client:
+    client-url:
+      defaultZone:http://localhost:1090/eureka/
+
+
